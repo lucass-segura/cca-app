@@ -10,6 +10,9 @@ const HimnosList = () => {
         <Text className="mt-2 ml-3 text-2xl font-medium">Himnos</Text>
         <Link href="/#" className='mt-2 mr-3'>Ver todos</Link>
       </View>
+      <View className="h-[25%] w-[25%] m-4 bg-black">
+
+      </View>
     </View>
   );
 };
