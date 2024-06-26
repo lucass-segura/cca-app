@@ -90,7 +90,7 @@ export const himnos = [
     },
     {
         "himno": 10,
-        "titulo": "ProseguiD vi  Ctoriosos en Cristo",
+        "titulo": "ProseguiD victoriosos en Cristo",
         "letra": {
             "1": "Proseguid victoriosos en Cristo,\nPues, en breve, vendrá de los cielos;\nMandará recoger a Su pueblo,\nA la gloria lo ha de llevar.",
             "2": "Proseguid rechazando el pecado,\nPues iréis a encontrar al Maestro;\nPor vosotros, Él ha preparado\nUn lugar en Su reino de amor.",
@@ -110,7 +110,7 @@ export const himnos = [
     },
     {
         "himno": 12,
-        "titulo": "sie MPre en Cristo Confiaré",
+        "titulo": "sieMPre en Cristo Confiaré",
         "letra": {
             "1": "Siempre en Cristo confiaré y Su Palabra honraré;\nÉl, por Su muerte en la cruz, me concedió eterna luz.",
             "2": "Son los consejos de Jesús, para mi vida, santa luz;\nPor ellos tengo rectitud, consolación y Su virtud.",
@@ -198,7 +198,7 @@ export const himnos = [
     },
     {
         "himno": 21,
-        "titulo": "no Más oPri   MiDos sereMos",
+        "titulo": "no Más oPriMiDos sereMos",
         "letra": {
             "1": "No más oprimidos seremos\nDespués que retorne el Señor;\nLa voz esperada oiremos:\n“Venid”, nos dirá el Salvador;\nLa vida eterna con gloria\nEn los cielos, Dios nos dará;\nCompleta será la victoria:\nSu rostro, veremos, allá.",
             "2": "No más perseguidos seremos\nDespués que retorne el Señor;\nDejando el mundo, iremos\nAl cielo, morada de amor;\nEn esa ciudad tan gloriosa,\nLugar de eterno esplendor,\nLa herencia divina, preciosa,\nTendremos de Dios, Creador.",
@@ -4675,7 +4675,7 @@ export const himnos = [
         "titulo": "Jóvenes, aMaD el ConseJo",
         "letra": {
             "1": "Siempre amad el consejo,\nOh jóvenes del buen Jesús;\nÉl es el santo Modelo\nDe vida, justicia y luz.",
-            "2":"Vasos, por Cristo, elegidos,\nSeréis para gloria de Dios;\nQuiere, el Señor, revestiros\nDe santas virtudes de amor.",
+            "2": "Vasos, por Cristo, elegidos,\nSeréis para gloria de Dios;\nQuiere, el Señor, revestiros\nDe santas virtudes de amor.",
             "3": " Joven que sigues a Cristo, \nEn tu existencia, tendrás \nSu celestial providencia \nY próspero, en Él, serás.",
             "coro": "A Dios y a Cristo, el Señor,\nDebemos consagración\nRespeto, honra, profundo amo\nY eterna adoración."
         }

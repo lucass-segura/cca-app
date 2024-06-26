@@ -4,7 +4,7 @@ import Svg, { Path } from 'react-native-svg';
 
 const SearchBar = ({setSearchText}) => {
   return (
-    <View className="mt-5 ml-5 w-[90%] h-[70px] flex-row items-center  bg-primary rounded-lg">
+    <View className="mt-5 ml-5 w-[90%] h-[70px] flex-row items-center font-himnSemiBold bg-primary rounded-lg">
       <Svg 
         className="w-5 h-5 mr-2 ml-2 text-white"
         fill="none" 
@@ -22,7 +22,7 @@ const SearchBar = ({setSearchText}) => {
       <TextInput 
         placeholder="Buscar himno por número o título..." 
         placeholderTextColor="white"
-        className="flex-1 text-[20px] bg-transparent text-white"
+        className="flex-1 text-2xl mt-1 bg-transparent font-himnSemiBold text-white"
         onChangeText={text => setSearchText(text)}
       />
     </View>
