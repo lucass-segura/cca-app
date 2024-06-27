@@ -1,17 +1,8 @@
-import React, { useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { View, Text, ScrollView, Alert } from 'react-native';
 import { useLocalSearchParams, useNavigation } from 'expo-router';
-import { himnos } from './api/himnosAPI';
-
-const formatTitle = (title) => {
-  const specialWords = ['Jesus', 'Dios', 'Maestro', 'Maestro...', 'Pastor', 'Cristo', 'Señor', 'Espíritu', 'Santo', 'Creador', 'Redentor', 'Salvador', 'Rey', 'Padre'];
-  const words = title.trim().replace(/\s\s+/g, ' ').toLowerCase().split(' ');
-  const formattedWords = words.map((word, index) => {
-    const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
-    return specialWords.includes(capitalizedWord) || index === 0 ? capitalizedWord : word;
-  });
-  return formattedWords.join(' ');
-};
+import { himnos } from '../../api/himnosAPI';
+import { formatTitle } from '../../utils/utils';
 
 const HimnoDetailScreen = () => {
   const { himnoId } = useLocalSearchParams();
@@ -43,7 +34,7 @@ const HimnoDetailScreen = () => {
     .filter(([key]) => key !== 'coro' && key !== 'final')
     .sort(([a], [b]) => a - b);
   const coro = letra.coro ? <Text key="coro" className="ml-5 mt-4 text-2xl font-himnBold">{letra.coro}</Text> : null;
-  const final = letra.final ? <Text key="final" className="ml-5 mt-4 text-2xl font-himnBold">{letra.final}</Text> : null;
+  const final = letra.final ? <Text key="final" className="ml-10 mt-4 text-2xl font-himnBold">{letra.final}</Text> : null;
 
   return (
     <ScrollView>
@@ -60,6 +51,7 @@ const HimnoDetailScreen = () => {
         </View>
       ))}
       {final}
+      <View className="mt-10"></View>
     </ScrollView>
   );
 }

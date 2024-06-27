@@ -4679,5 +4679,5 @@ export const himnos = [
             "3": " Joven que sigues a Cristo, \nEn tu existencia, tendrás \nSu celestial providencia \nY próspero, en Él, serás.",
             "coro": "A Dios y a Cristo, el Señor,\nDebemos consagración\nRespeto, honra, profundo amo\nY eterna adoración."
         }
-    }
+    },
 ];

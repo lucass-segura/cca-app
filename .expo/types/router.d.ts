@@ -3,9 +3,9 @@ import type { ReactNode } from 'react';
 import type { TextProps, GestureResponderEvent } from 'react-native';
 
 export namespace ExpoRouter {
-  type StaticRoutes = `/` | `/_sitemap` | `/api/coritosAPI` | `/api/himnosAPI` | `/components/HimnoPreview` | `/components/SearchBar`;
-  type DynamicRoutes<T extends string> = `/${SingleRoutePart<T>}`;
-  type DynamicRouteTemplate = `/[himnoId]`;
+  type StaticRoutes = `/` | `/_sitemap` | `/api/coritosAPI` | `/api/himnosAPI` | `/components/CoritoPreview` | `/components/HimnoPreview` | `/components/SearchBar` | `/utils/utils`;
+  type DynamicRoutes<T extends string> = `/screens/corito/${SingleRoutePart<T>}` | `/screens/himno/${SingleRoutePart<T>}`;
+  type DynamicRouteTemplate = `/screens/corito/[coritoId]` | `/screens/himno/[himnoId]`;
 
   export type RelativePathString = `./${string}` | `../${string}` | '..';
   export type AbsoluteRoute = DynamicRouteTemplate | StaticRoutes;

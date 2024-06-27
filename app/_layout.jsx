@@ -17,7 +17,6 @@ const RootLayout = () => {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
-      <Stack.Screen name="[himnoId]" options={({ route }) => ({ title: route.params?.himno || 'Himno' })} />
     </Stack>
   )
 }

@@ -1,10 +1,22 @@
-import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, TextInput, TouchableOpacity } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-const SearchBar = ({setSearchText}) => {
+const SearchBar = ({ setSearchText }) => {
+  const [searchText, setLocalSearchText] = useState('');
+
+  const handleClearText = () => {
+    setLocalSearchText('');
+    setSearchText('');
+  };
+
+  const handleChangeText = (text) => {
+    setLocalSearchText(text);
+    setSearchText(text);
+  };
+
   return (
-    <View className="mt-5 ml-5 w-[90%] h-[70px] flex-row items-center font-himnSemiBold bg-primary rounded-lg">
+    <View className="mt-3 ml-5 w-[90%] h-[70px] flex-row items-center font-himnSemiBold bg-primary rounded-lg">
       <Svg 
         className="w-5 h-5 mr-2 ml-2 text-white"
         fill="none" 
@@ -23,8 +35,27 @@ const SearchBar = ({setSearchText}) => {
         placeholder="Buscar himno por número o título..." 
         placeholderTextColor="white"
         className="flex-1 text-2xl mt-1 bg-transparent font-himnSemiBold text-white"
-        onChangeText={text => setSearchText(text)}
+        onChangeText={handleChangeText}
+        value={searchText}
       />
+      {searchText.length > 0 && (
+        <TouchableOpacity onPress={handleClearText} className="mr-2">
+          <Svg 
+            className="w-5 h-5 text-white"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <Path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </Svg>
+        </TouchableOpacity>
+      )}
     </View>
   );
 };
