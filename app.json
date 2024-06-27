@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "cca-app",
+    "name": "CCA",
     "slug": "cca-app",
     "scheme": "cca-app",
     "version": "0.0.1",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.glowsito.ccaapp"
     },
     "web": {
       "bundler": "metro",
@@ -37,7 +38,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "7506e7f3-919f-41ef-bb65-4c7cbfb36419"
+        "projectId": "b1ae891d-b357-48b0-bf31-ec3779a1505d"
       }
     }
   }
